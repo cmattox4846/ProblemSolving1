@@ -8,26 +8,59 @@
 //     }
 // console.log(reverseWord)
 
-// //Capitalize Letter
+// // //Capitalize Letter
 
-let string1 = 'hello world';
-let completeCapString = ' '
+// let string1 = 'hello world';
+// let completeCapString = ' '
 
-// change first letter of srting to upper case
+// //cycle through the string array in order to find new word and cap it
 
+// for(let i = 0; i < string1.length; i++){
+//     if(i == 0){
+//         completeCapString = string1[i].toUpperCase()
+//     }
+//     else if (string1[i - 1]  === ' '){
+//         completeCapString += string1[i].toUpperCase();
+//     }else {
+//         completeCapString += string1[i]
+//     }
+//     console.log (completeCapString)
+// }
+// console.log(completeCapString)
 
+//Compress a string of characters
 
-//cycle through the string array in order to find new word and cap it
+// let string = 'aaabbbbbccccaacccbbbaaabbbaaa'
+// let stringArray =  []
+// let stringCount = 1
+// let newString = ''
 
-for(let i = 0; i < string1.length; i++){
-    if(i == 0){
-        completeCapString = string1[i].toUpperCase()
-    }
-    else if (string1[i - 1]  === ' '){
-        completeCapString += string1[i].toUpperCase();
-    }else {
-        completeCapString += string1[i]
-    }
-    console.log (completeCapString)
-}
-console.log(completeCapString)
+// // turn string in to an array 
+
+// stringArray = string.split('')
+
+// console.log('old string ' + string) 
+
+// // function to compare array values and then keep count of duplicats 
+
+// function checkString(string){
+    
+//     for(let i = 0; i < string.length; i++){
+//         if(string[i] === string[i+1]){
+//             stringCount++;
+             
+//         }
+//         else{
+//             newString += stringCount + string[i]
+            
+//             stringCount = 1
+//         }
+    
+//     }  
+ 
+//     console.log('compressed string ' + newString) 
+// }
+
+// // calling function
+// checkString(stringArray)
+
