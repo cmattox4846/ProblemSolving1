@@ -1,11 +1,52 @@
-// //Happy Numbers 
+//Happy Numbers 
+let number = parseInt(prompt('Please enter a number to be checked'));
+let counter;
+let accumulator;
+let currentItem;
+let sum
+let numArray
+let happyness 
 
-// let number = 13
-// let numArray = number.toString().split('').map(iNum => parseInt(iNum, 10));
+function isHappy(numbers, counter = 0)
+{
+let result = false
+    if (counter < 8){
+        
+             numArray = numbers.toString().split('').map (numbers => numbers *numbers);
+             sum = numArray.reduce((accumulator, currentItem) => accumulator +currentItem, 0)
+            console.log(numArray)
+            console.log(sum)
+                    if (sum === 1){
+                        console.log('Your number ' + number + ' is super Happy!')
+                        return result = true
+                    }else
+                    {
+                        counter++
+                        isHappy(sum,counter)
+                    }
+        }
+        else {
+            console.log('Your number ' + number + ' is super sad!')
+
+        }
+        return result
+}
+
+
+happyness = isHappy(number,counter)
+
+
+
+
+
+
+
+
 // let sqNumTotal = 1
 // //let keepArray =  sqNumTotal.toString().split('').map(iNum => parseInt(iNum, 10));
 // let trackLoop =  true
 // console.log(numArray)
+// console.log(sum)
 
 
 // function squareNum(number){
@@ -26,7 +67,7 @@
 //   return sqNumTotal
 // }
 
-// squareNum(numArray)
+//  squareNum(numArray)
 
 
 // //Prime numbers between 1-100
@@ -50,38 +91,24 @@
 
 //Fibonacci Number
 
-let numArray =[]
-let amount = parseInt(prompt('Please enter a number'));
+// let numArray =[]
+// let amount = parseInt(prompt('Please enter a number'));
 
-function addNumbers(number){
-    let num =0
-    let num2 = 1
-    let nextValue 
-    for (let i = 1;i<amount;i++){
-       nextValue = num +num2;
-       numArray.push(nextValue)
-       num = num2
-       num2 = nextValue
+// function addNumbers(number){
+//     let num =0
+//     let num2 = 1
+//     let nextValue 
+//     for (let i = 1;i<amount;i++){
+//        nextValue = num +num2;
+//        numArray.push(nextValue)
+//        num = num2
+//        num2 = nextValue
         
         
-    }
-    console.log(numArray)
-}
-
-addNumbers(amount)
-
-
-// program to generate fibonacci series up to n terms
-
-// take input from the user
-// const number = parseInt(prompt('Enter the number of terms: '));
-// let n1 = 0, n2 = 1, nextTerm;
-
-// console.log('Fibonacci Series:');
-
-// for (let i = 1; i <= number; i++) {
-//     console.log(n1);
-//     nextTerm = n1 + n2;
-//     n1 = n2;
-//     n2 = nextTerm;
+//     }
+//     console.log(numArray)
 // }
+
+// addNumbers(amount)
+
+
